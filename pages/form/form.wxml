@@ -1,0 +1,66 @@
+<!--form.wxml-->
+<view class="container">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section">
+            <view class="section__title">用户名：</view>
+            <input name="username" placeholder="请输入用户名" />
+        </view>
+
+        <view class="section section_gap">
+            <view class="section__title">关注的产品</view>
+            <checkbox-group name="product">
+                <label><checkbox value="0"/>html5</label>
+                <label><checkbox value="1"/>java</label>
+                <label><checkbox value="2"/>ui</label>
+                <label><checkbox value="3"/>node</label>
+            </checkbox-group>
+        </view>
+
+        <view class="section section_gap">
+            <view class="section__title">来源渠道</view>
+            <radio-group name="from">
+                <label><radio value="0"/>百度搜索</label>
+                <label><radio value="1"/>朋友介绍</label>
+                <label><radio value="2"/>广告</label>
+            </radio-group>
+        </view>
+
+        <view class="section">
+            <view class="section__title">请选择地区</view>
+            <picker name="area" bindchange="bindPickerChange" value="{{area}}" range="{{array}}">
+                <view class="picker">
+                当前选择：{{array[area]}}
+                </view>
+            </picker>
+        </view>
+
+        <view class="section section_gap">
+            <view class="section__title">请对我们服务打分</view>
+            <view class="section__title_slider">
+                <slider name="score" show-value bindchange="sliderchange" ></slider>
+                <span>分</span>
+            </view>
+            
+        </view>
+
+        <view class="btn-area">
+                <button formType="submit">提交</button>
+            </view>
+
+
+
+
+
+    
+        <!--<view class="section section_gap">
+            <view class="section__title">switch</view>
+            <switch name="switch"/>
+        </view>-->
+       
+
+        
+        
+        
+        
+    </form>
+</view>

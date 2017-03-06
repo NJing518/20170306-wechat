@@ -1,0 +1,7 @@
+<!--detail.wxml-->
+<view class="container">
+    <view class='detailtitle'>{{info.title}}</view>
+    <view class='detailimg'><image src="{{info.img}}"></image></view>  
+    <view class='detailcont'>{{info.content}}</view>
+    <view class='detailback' bindtap="detailBack">返回首页</view>
+</view>

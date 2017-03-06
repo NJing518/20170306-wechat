@@ -1,0 +1,44 @@
+/**aboutme.wxss**/
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutimg{
+  width: 230px;
+  height: 200px;
+}
+.aboutimg image{
+  width: 100%;
+  height: 100%;
+}
+.abouttitle{
+    margin: 10px 0px;
+}
+.aboutcont{
+    margin: 10px 10px;
+}
+.aboutlianxi{
+   margin: 10px 0px; 
+}
+.aboutphone{
+    width: 100%;
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+.aboutadres{
+    width: 100%;
+    margin: 10px 0px;
+    padding-left: 10px;
+}
+.aboutteamwork{
+    width: 100%;
+    margin: 10px 0px;
+    padding-left: 10px; 
+}
+swiper{
+    width: 100%;
+}
+.slide-image{
+    width: 100%;
+}

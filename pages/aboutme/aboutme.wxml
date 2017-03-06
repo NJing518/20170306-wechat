@@ -1,0 +1,19 @@
+<!--aboutme.wxml-->
+<view class="container">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+            <swiper-item>
+                <navigator url="{{item.link}}" hover-class="other-navigator-hover" open-type="switchTab">
+                    <image src="{{item.url}}" class="slide-image" width="355" height="150"/>
+                </navigator>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class='aboutimg'><image src="{{image}}"></image></view>
+    <view class='abouttitle'>{{title}}</view>
+    <view class='aboutcont'>{{cont}}</view>
+    <view class='aboutlianxi'>联系方式</view>
+    <view class='aboutphone'>电话：{{phone}}</view>
+    <view class='aboutadres'>地址：{{adres}}</view>
+    <view class='aboutteamwork'>合作伙伴：{{teamwork}}</view>
+</view>

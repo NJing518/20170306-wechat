@@ -1,0 +1,22 @@
+/**form.wxss**/
+form{
+    width: 100%;
+}
+.section{
+    width: 100%;
+    margin: 10px;
+}
+.section__title{
+    margin-bottom: 10px;
+}
+.section__title_slider{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.section__title_slider slider{
+    width: 70%;
+}
+.section__title_slider span{
+    margin-top: 10px;
+}
